@@ -22,5 +22,5 @@ app.post('/user',(req,res)=>{
 })
 app.post('/Emp',(req,res)=>{
 const{Empname,EmpId,EmpSal}=req.body;
-res.status(420).json({message:"ok"})
+res.status(420).json({message:"ok"});
 })
