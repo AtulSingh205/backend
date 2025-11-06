@@ -6,10 +6,10 @@ app.get('/',(req,res)=>{
     res.send(' hii node js how are you beta ');
 })
 app.get('/About/:id',(req,res)=>{
-    res.send(`user id is : ${req.params.id}`)
+    res.send(`user id is : ${req.params.id}`);
 })
 app.listen(port,()=>{
-    console.log(`server is running at ${port}`)
+    console.log(`server is running at ${port}`);
 })
 app.post('/me',(req,res)=>{
     const{email,Password}=req.body;
