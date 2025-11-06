@@ -12,13 +12,13 @@ app.listen(port,()=>{
     console.log(`server is running at ${port}`);
 })
 app.post('/me',(req,res)=>{
-    const{email,Password}=req.body;
-    res.send(`User email is ${email} and Password is ${Password}`);
+    const{email,Password}=req.body
+    res.send(`User email is ${email} and Password is ${Password}`)
     
 })
 app.post('/user',(req,res)=>{
-    const{Username,usergmail}=req.body;
-    res.send(`User name is ${Username} and gmailis ${usergmail}`);
+    const{Username,usergmail}=req.body
+    res.send(`User name is ${Username} and gmailis ${usergmail}`)
 })
 app.post('/Emp',(req,res)=>{
 const{Empname,EmpId,EmpSal}=req.body;
